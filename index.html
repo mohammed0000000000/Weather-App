@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App - Easy Tutorials</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="card">
+        <div class="search">
+            <input type="text" placeholder="Enter Your City" spellcheck="false">
+            <button>
+                <img src="images/search.png">
+            </button>
+        </div>
+        <div class="error">
+            <p>No Such City With This Name</p>
+        </div>
+        <div class="weather">
+            <img src="/images/rain.png" class="image">
+            <h1 class="temprature">22°c</h1>
+            <h1 class="city">Germany</h1>
+            <div class="detailes">
+                <div class="col">
+                    <img src="/images/humidity.png" alt="" srcset="">
+                    <div>
+                        <p class="humidity">100%</p>
+                        <p>Humidity</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <img src="/images/wind.png" alt="" srcset="">
+                    <div>
+                        <p class="wind">1.85 km/h</p>
+                        <p>Windy Speed</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="task.js"></script>
+</body>
+</html>
+<!-- 
+    You can use the spellcheck attribute to control spell checking
+    in HTML input and textarea elements.
+-->
