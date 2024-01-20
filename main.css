@@ -1,0 +1,112 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family:Arial, Helvetica, sans-serif;
+}
+:root{
+
+}
+body{
+    background: #222;
+}
+/* Card */
+.card{
+/* background-image: url("./images/"); */
+    background:linear-gradient(135deg,#00feba,#5b548a);
+    color:#fff;
+    width: 90%;
+    height: fit-content;
+    max-width: 400px;
+    margin: 100px auto 0;
+    border-radius: 20px;
+    text-align: center;
+}
+/* Search */
+.card .search{
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 15px;
+}
+.card .search input{
+    border-radius: 20px;
+    max-height: 40px;
+    padding: 5px 10px;
+    border: none;
+    outline: none;
+    width: 80%;
+    background-color: #ebfffc;
+    font-size: 15px;
+}
+.card .search input::placeholder{
+    font-size: 13px;
+}
+.card .search button{
+    padding: 5px 10px;
+    border: none;
+    outline: none;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    text-align: center;
+    cursor: pointer;
+}
+.card .search button img{
+    width: 13px;
+    margin: auto;
+}
+/* Weather */
+.card .weather{
+    display: flex;
+    flex-direction: column;
+}
+.weather img{
+    width: 50%;
+    margin: 0 auto 20px;
+}
+.weather .temprature{
+    margin: 0 auto 15px;
+    font-size: 40px;
+}
+.weather .city{
+    font-weight: normal;
+    margin-bottom: 15px;
+}
+.weather .detailes{
+    margin: 0 15px 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.detailes .col{
+    max-width: 50%;
+    display: flex;
+    /* justify-content: space-evenly; */
+}
+.detailes .col:first-of-type{
+    margin-left: 20px;
+}
+.detailes .col img{
+    height: 40%;
+    width: 25%;
+    margin: 15px 5px;
+}
+.col div{
+    margin: 15px 5px;
+}
+.col div p:first-child{
+    font-size: 18px;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+}
+.col div p:last-child{
+    font-size:11px;
+    margin-top: 5px;
+}
+/* error */
+.card .error{
+    display: none;
+}
+.error p{
+    padding: 0 15px 15px;
+}
